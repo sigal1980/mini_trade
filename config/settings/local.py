@@ -21,7 +21,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
-    'src.storage.apps',
+
+    'src.storage.apps.StorageConfig',
 ]
 
 MIDDLEWARE = [
@@ -91,3 +92,13 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+NUMBER_GROUPNG = 3
+
+USE_THOUSAND_SEPARATOR = True
+
+THOUSAND_SEPARATOR = ' '
+
+

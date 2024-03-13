@@ -18,22 +18,22 @@ class BaseProduct(models.Model):
                     verbose_name='описание'
                     )
     unit = models.ForeignKey(
-                BaseUnit,
+                'Unit',
                 on_delete=models.PROTECT,
                 verbose_name='ед.'
                 )
     category = models.ForeignKey(
-                    BaseCategory,
+                    'Category',
                     on_delete=models.PROTECT,
-                    verbose_name='category'
+                    verbose_name='категория'
                     )
     price = models.OneToOneField(
-                BasePrice,
+                'Price',
                 on_delete=models.CASCADE,
                 verbose_name='цена'
                 )
     quantity = models.OneToOneField(
-                    BaseQuantity,
+                    'Quantity',
                     on_delete=models.CASCADE,
                     verbose_name='кол-во'
                     )
@@ -42,5 +42,6 @@ class BaseProduct(models.Model):
         verbose_name = 'Товар'
         verbose_name_plural = 'Товары'
         db_table = 'product'
+        abstract = True
 
 

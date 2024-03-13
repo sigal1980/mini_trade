@@ -17,3 +17,6 @@ class BaseCategory(models.Model):
         verbose_name = 'категория'
         verbose_name_plural = 'категории'
         db_table = 'category'
+        abstract = True
+
+

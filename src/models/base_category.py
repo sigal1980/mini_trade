@@ -12,6 +12,12 @@ class BaseCategory(models.Model):
                     blank=True,
                     verbose_name='описание'
                     )
+    slug = models.SlugField(
+                max_length=60
+                )
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = 'категория'

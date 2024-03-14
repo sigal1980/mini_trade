@@ -9,6 +9,9 @@ class BaseQuantity(models.Model):
                     verbose_name='кол-во'
                     )
 
+    def __str__(self):
+        return str(self.quantity)
+
     class Meta:
         verbose_name = 'количество'
         verbose_name_plural = 'количество'

@@ -17,5 +17,6 @@ class BasePrice(models.Model):
         verbose_name_plural = 'цены'
         db_table = 'price'
         abstract = True
+        managed = False
 
 

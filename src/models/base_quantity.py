@@ -17,5 +17,6 @@ class BaseQuantity(models.Model):
         verbose_name_plural = 'количество'
         db_table = 'quantity'
         abstract = True
+        managed = False
 
 

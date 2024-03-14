@@ -37,6 +37,12 @@ class BaseProduct(models.Model):
                     on_delete=models.CASCADE,
                     verbose_name='кол-во'
                     )
+    slug = models.SlugField(
+                max_length=60,
+                null=True)
+
+    def __str__(self):
+        return self.name
 
     class Meta:
         verbose_name = 'Товар'

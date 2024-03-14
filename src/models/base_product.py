@@ -38,8 +38,8 @@ class BaseProduct(models.Model):
                     verbose_name='кол-во'
                     )
     slug = models.SlugField(
-                max_length=60,
-                null=True)
+                max_length=60
+                )
 
     def __str__(self):
         return self.name

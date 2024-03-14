@@ -9,6 +9,9 @@ class BasePrice(models.Model):
                 verbose_name='цена'
                 )
 
+    def __str__(self):
+        return str(self.price)
+
     class Meta:
         verbose_name = 'цена'
         verbose_name_plural = 'цены'

@@ -49,5 +49,6 @@ class BaseProduct(models.Model):
         verbose_name_plural = 'Товары'
         db_table = 'product'
         abstract = True
+        managed = False
 
 

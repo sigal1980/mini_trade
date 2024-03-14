@@ -23,5 +23,6 @@ class BaseUnit(models.Model):
         verbose_name_plural = 'еденицы'
         db_table = 'unit'
         abstract = True
+        managed = False
 
 

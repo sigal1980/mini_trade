@@ -22,7 +22,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
 
-    #'src.storage.apps.StorageConfig',
+    'src.storage.apps.StorageConfig',
 ]
 
 MIDDLEWARE = [
